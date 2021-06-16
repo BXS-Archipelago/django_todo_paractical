@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from .models import Item
-from.forms import Itemform
+from .forms import ItemForm
 
 # Create your views here.
 
@@ -22,5 +22,4 @@ def add_item(request):
     context = {
         'form': form
     }
-
     return render(request, 'todo/add_item.html', context)
