@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Add a To Do Item</h1>
-    <form action="add" method="POST">
+    <form method="POST">
         {% csrf_token %}
         {{ form.as_p }}
         <div>
